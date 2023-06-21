@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae1498e775.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+       <div class="container"  data-aos="fade-up">
+         <nav>
+            <img src="./logo.jpg" class="logo">
+            <ul >
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header-text" data-aos="fade-up-right">
+            <p>Full Stack Web Developer</p>
+            <h1>Hi,I'm <span>Argha</span><br>Maity From Kolkata</h1>
+            <button onclick="myfunction()">toggle</button>
+         </div>    
+
+       </div>
+    </div>
+<!--------------------------------------about------------------------------------------> 
+
+    <div id="about">
+          <div class="container">
+             <div class="row">
+                <div class="about-col-1"  data-aos="fade-up-right">
+                    <img src="./MyPicture.png" >
+                </div>
+                <div class="about-col-2" data-aos="fade-up-left">
+                    <h1 class="title">About <span>Me</span> </h1>
+                    <p>Highly motivated and results-driven computer science student with strong technical skills and a passion for innovation. Possesses excellent problem-solving skills and a proven ability to work well in a team. Seeking an opportunity to apply my skills and knowledge in a challenging role in the field of computer science</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills" data-aos="flip-left">
+                        <ul>
+                            <li><span>Core Java</span><br>Object Oriented Programming</li>
+                            <li><Span>Web Development</Span><br> Html-css </li>
+                            <li><span>Database Management System <br></span> Mysql</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents "id="experience" data-aos="flip-left" >
+                        <ul>
+                            <li><span>Core Java</span><br>Object Oriented Programming</li>
+                            <li><Span>Web Development</Span><br> Html-css </li>
+                            <li><span>Database Management System <br></span> Mysql</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education" data-aos="flip-left">
+                        <ul>
+                            <li><span>Core Java</span><br>Object Oriented Programming</li>
+                            <li><Span>Web Development</Span><br> Html-css </li>
+                            <li><span>Database Management System <br></span> sql</li>
+                        </ul>
+
+                    </div>
+                </div>
+             </div>
+          </div>
+
+    </div>
+
+ <!-- -------------------------services--------------------->
+      
+    <div id="services">
+        <div class="container">
+            <h1 class="title" data-aos="fade-up">My Services</h1>
+            <div class="services-list">
+                <div class="service"  data-aos="flip-left" >
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Core Java</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet quod molestias dolore facere quo? Deleniti debitis deserunt veniam architecto?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service"  data-aos="flip-left">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet quod molestias dolore facere quo? Deleniti debitis deserunt veniam architecto?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="service"  data-aos="flip-left">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi adipisci deleniti doloremque inventore. Neque, tenetur.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- ------------------------------------portfolio------------------------------------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 data-aos="fade-up" class="title">My Work</h1>
+        <div class="work-list">
+            <div class="work" data-aos="fade-up">
+                <img src="./work-1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connect you to the talented people arround the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-aos="fade-up">
+                <img src="./work-2.png" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connect you to the talented people arround the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-aos="fade-up">
+                <img src="./work-3.png">
+                <div class="layer">
+                    <h3>Online shopping app</h3>
+                    <p>The app connect you to the talented people arround the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn"data-aos="fade-up">See More</a>
+    </div>
+ </div>
+
+ <!-- --------------------contact -------------------------->
+ <div id="contact" >
+       <div class="container"data-aos="fade-up">
+              <div class="row">
+                  <div class="contact-left"data-aos="fade-up-right">
+                         <h1 class="title">Contact Me</h1>
+                         <p><i class="fa-solid fa-paper-plane"></i>arghamaity2001@gmail.com</p>
+                         <p><i class="fa-solid fa-phone-volume"></i>9083584190</p>
+                         <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://github.com/Argha100" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/argha-maity-aa8218216/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                         </div>
+                         <a href="./Resume Argha Maity.pdf" download class="btn btn2">Download CV</a>
+                  </div>
+                  <div class="contact-right"data-aos="fade-up-left">
+                    <form >
+                        <input type="text" name="Name" Placeholder="Your name" required> 
+                        <input type="email" name="Email" Placeholder="Your email " required>
+                        <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                    
+                </div>
+              </div>
+              
+       </div> 
+
+     
+ </div>
+
+
+ <script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+
+   function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }  
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }      
+         event.currentTarget.classList.add("active-link")
+         document.getElementById(tabname).classList.add("active-tab");
+
+   }
+  
+  
+</script>
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="../main.js"></script>
+   
+</body>
+</html>
